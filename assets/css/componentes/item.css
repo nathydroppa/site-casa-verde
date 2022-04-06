@@ -1,0 +1,45 @@
+.lista-item {
+    display: flex; /*para que os itens fiquem alinhados no meio do cartão*/
+    flex-direction: column; /*para que os itens fiquem em colunas*/
+    align-items: center;
+}
+
+.item {
+    display: flex; /*para que o circulo amarelo fique alinhado junto ao texto da lista*/
+    align-items: center;
+
+    width: 15rem;
+
+    margin-bottom: 1rem;
+}
+
+.item__icone { /*circulo amarelo onde vai o icone*/
+    display: block;
+
+    margin-right: 1rem; /*espaço entre o icone e o texto*/
+
+    width: 3.25rem;
+    height: 3.25rem;
+
+    border-radius: 50%; /*forma o circulo*/
+
+    background-color: var(--amarelo);
+
+    background-size: 1.375rem;
+    background-repeat: no-repeat;
+    background-position: center; /*deixa o icone centralizado no meio do circulo*/
+}
+
+/* classes de cada icone da lista que faz parte do cartão*/
+
+.item__icone--cursor {
+    background-image: url(../../img/icones/mouse.svg);
+}
+
+.item__icone--carrinho {
+    background-image: url(../../img/icones/cart.svg);
+}
+
+.item__icone--caminhao {
+    background-image: url(../../img/icones/truck.svg);
+}

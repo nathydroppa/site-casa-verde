@@ -1,0 +1,22 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between; /*para deixar a logo e o carrinho de compras divididos igualmente (espaço)*/
+    align-items: flex-end; /*alinhados pela base*/
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.cabecalho__logo {
+    width: 11.125rem; /*deixamos um tamanho pre definido pois a imagem é maior originalmente do que o 
+                      tamanho do cabeçalho pra mobile*/
+}
+
+.cabecalho__carrinho {
+    width: 1.75rem;
+}
+

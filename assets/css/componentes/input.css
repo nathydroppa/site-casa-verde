@@ -1,0 +1,32 @@
+.input {
+    color: inherit; /*herdada do corpo da página*/
+    font-family: inherit; 
+    font-size: inherit;
+
+    width: 100%;
+    padding-top: 1.75rem;
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    padding-bottom: 1.75rem;
+
+    box-sizing: border-box; /*garante que as medidas declaradas cima sejam aplicadas sepadaradamente e não somadas*/
+
+    margin-bottom: 1rem;
+
+    border: none; /*tirar a borda que vem padrão do input*/
+
+    background-color: var(--branco);
+
+    box-shadow: 10px 10px 30px var(--preto-transparente);
+}
+
+.input--icone { /*variação de input quando este tiver um icone dentro*/
+    padding-left: 4.25rem;
+
+    background-repeat: no-repeat;
+    background-position: left 1.75rem center; /*para icone ficar sempre a esquerda, com espaçamento e centralizado*/
+}
+
+.input--email { /*classe para conter especificamente o icone de e-mail*/
+    background-image: url(../../img/icones/mail.svg);
+}

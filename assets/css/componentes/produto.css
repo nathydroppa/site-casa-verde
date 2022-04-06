@@ -1,0 +1,64 @@
+.produto  {
+    margin-bottom: 1rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 50%; 
+
+    position: relative; /*para que a imagem fique flutuante no cartão*/
+
+    overflow: hidden; /*para que a imagem não ultrapasse o limite do cartão*/
+
+    background-color: var(--branco);
+
+    box-shadow: 10px 10px 30px var(--preto-transparente);
+
+    box-sizing: border-box;
+
+    min-height: 12.5rem;
+}
+
+.produto__imagem {
+    position: absolute; /*para que a imagem fique flutuante*/
+    top: 50%; /*imagem fica no topo pela metade*/
+    left: -8rem;
+
+    transform: translateY(-50%); /*para que metade da imagem fique na metade do cartão, se deixar só o 
+                                 top 50% o final da imagem vai ficar na metade do cartão*/
+    z-index: 1; /* para que a imagem fique atrás do conteúdo, p/ não sobrepor a escrita que virá a direita*/    
+    
+    width: 18.75rem; /*para que todas as imagens tenham o mesmo tamanho*/
+}
+
+.produto__conteudo { /*informações do produto fique acima da imagem*/
+    position: relative;
+    z-index: 2;
+}
+
+.produto__titulo {
+    margin-top: 0; /*a estilização do titulo padrão já está feita no arquivo base.css, por isso tiramos a margin-top*/
+    margin-bottom: .5rem;
+}
+
+.produto__preco { /*estilização do texto padrão já está feita no arquivo base.css*/
+    margin-bottom: 1.5rem;
+}
+
+.produto__comprar { /*botao comprar*/
+    color: var(--amarelo);
+
+    display: flex; /*por conter um icone do lado */
+    align-items: center; /*alinha icone com o texto*/
+}
+
+.produto__comprar--icone {
+    display: inline-block; /* para podermos dar dimensões para o icone, inline -block garente um do lado do outro*/
+
+    width: 0.875rem;
+    height: 0.875rem;
+
+    margin-left: 1.75rem;
+
+    background-image: url(../../img/icones/seta.svg);
+    background-size: contain; /*para que o icone não ultrapasse o tamanho que definimos*/
+}

@@ -1,0 +1,29 @@
+.chamada {
+    padding-top: 2.5rem;
+
+    margin-bottom: 2.5rem;
+
+    background-image: url(../../assets/img/splash-chamada.svg);
+    background-position: top -4rem right;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.chamada__texto { /*para deixar o texto limitado*/
+    width: 12.5rem;
+
+    margin-bottom: 1.55rem;
+}
+
+.chamada__imagem {
+    position: absolute; /*deixar a imagem da planta atrás do texto, para isso em .chamada a position está relativo*/
+    top: 3.25rem;
+    right: 0; /*para a img ficar toda a direita*/
+}
+
+.chamada__formulario {
+    position: relative;
+
+    z-index: 2; /*z-index acima de 1 para que o form fique acima da imagem*/
+}
